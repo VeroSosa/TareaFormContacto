@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <!--   Nombre     -->
+        <LinearLayout
+            android:id="@+id/area_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                tools:ignore="RtlHardcoded">
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="nombre"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    tools:ignore="Deprecated,HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/area_finalB"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/area_dep1"
+
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="20dp"
+               android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_finalB"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                tools:ignore="RtlHardcoded">
+
+
+                <EditText
+                    android:id="@+id/etFinalB"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="fecha de nacimiento"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    tools:ignore="Deprecated" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!--   Telefono     -->
+
+        <LinearLayout
+            android:id="@+id/area_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                tools:ignore="RtlHardcoded">
+
+                <EditText
+                    android:id="@+id/etTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="telefono"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    tools:ignore="Deprecated,HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <!--   Email   -->
+        <LinearLayout
+            android:id="@+id/area_creditos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                tools:ignore="RtlHardcoded">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="correo"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    tools:ignore="Deprecated,HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/area_descrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            tools:ignore="RtlHardcoded">
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/descripcion"
+                android:inputType="text"
+                android:singleLine="true"
+                tools:ignore="Deprecated,HardcodedText" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:id="@+id/siguiente"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>
